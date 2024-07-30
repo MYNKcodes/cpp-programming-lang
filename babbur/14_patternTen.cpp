@@ -1,8 +1,7 @@
-/*
-    1
-    21
-    321
-    4321
+/*  AAAA
+    BBBB
+    CCCC
+    DDDD
 */
 
 #include<iostream>
@@ -14,15 +13,15 @@ int main(){
     int i = 1;
     while (i<=n)
     {
-        int j = 1;
-        while (j<=i)
+        int j=1;
+        while (j<=n)
         {
-            cout<<i-j+1;
+            char ch='A'+i-1;
+            cout<<ch;
             j++;
         }
         cout<<endl;
         i++;
-        
     }
-    
-}    
+    return 0;
+}

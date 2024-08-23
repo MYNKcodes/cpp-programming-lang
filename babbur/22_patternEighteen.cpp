@@ -1,30 +1,28 @@
 /*
-1
-23
-345
-4567
+ABC
+BCD
+CDE
 */
-
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout<<"enter the nu. opf rows: ";
-    cin>>n;
-    int i=1;
+    cout<<"Enter the no of rows: ";
+    cin>> n;
+    int i = 1;
+
     while (i<=n)
     {
-        int value = i;
+        char ch = 'A'+i-1;
         int j=1;
-        while (j<=i)
+        while (j<=n)
         {
-            cout<<value;
-            value++;
+            cout<<ch;
+            ch++;
             j++;
         }
         cout<<endl;
         i++;
-        
     }
-    
+    return 0;
 }
